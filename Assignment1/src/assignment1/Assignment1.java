@@ -1,8 +1,13 @@
+/* //dasuhfou;dsahfuhdsauofh;daushfjladshvfhdf;hv;fdajlhv
+Homework #1
+Due Date: 1/29/2019
+Names: Donovan Farar & Anthony Kaskurs
+*/
+
 package assignment1;
 
 import java.util.Random;
 import java.util.*;
-
 
 public class Assignment1 {
 
@@ -110,10 +115,6 @@ public class Assignment1 {
     
     
     
-    
-    
-    
-    
     public static void main(String[] args) {
         
         final int DICE_IN_PLAY = 5;
@@ -216,12 +217,8 @@ public class Assignment1 {
             System.out.println("\n Enter 'y' to play again ");
             
             playAgain = keyboard.next().charAt(0);
+            keyboard.nextLine();
             
         }
-        
-        
-        
-        
     }
-    
 }
