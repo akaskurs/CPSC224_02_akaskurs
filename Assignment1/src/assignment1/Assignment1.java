@@ -4,13 +4,10 @@ Due Date: 1/29/2019
 Names: Donovan Farar & Anthony Kaskurs
 */
 
-
-
 package assignment1;
 
 import java.util.Random;
 import java.util.*;
-
 
 public class Assignment1 {
 
@@ -115,10 +112,6 @@ public class Assignment1 {
             foundFH = true;
         return foundFH;
     }
-    
-    
-    
-    
     
     
     
@@ -227,10 +220,5 @@ public class Assignment1 {
             keyboard.nextLine();
             
         }
-        
-        
-        
-        
     }
-    
 }
