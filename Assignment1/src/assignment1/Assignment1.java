@@ -18,7 +18,7 @@ public class Assignment1 {
     public static int rollDie()
     {
         Random rand = new Random();
-        int roll = rand.nextInt((6-1) + 1) + 1;
+        int roll = rand.nextInt((6-1) + 1) + 1;//ugfihsv;ougrhwfufbrefuidbw;hkrbencf
         return roll;
     }
     
