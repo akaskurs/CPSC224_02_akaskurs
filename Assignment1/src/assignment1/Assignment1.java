@@ -1,3 +1,11 @@
+/*
+Homework #1
+Due Date: 1/29/2019
+Names: Donovan Farar & Anthony Kaskurs
+*/
+
+//////
+
 package assignment1;
 
 import java.util.Random;
@@ -216,6 +224,7 @@ public class Assignment1 {
             System.out.println("\n Enter 'y' to play again ");
             
             playAgain = keyboard.next().charAt(0);
+            keyboard.nextLine();
             
         }
         
