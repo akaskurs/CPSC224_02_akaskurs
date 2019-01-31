@@ -22,7 +22,7 @@ public class Assignment1 {
         {
             String keep = "nnnnn";
             int turn = 1;
-            while(turn < 4 && keep != "yyyyy")
+            while(turn < 4 && keep != "yyyyy") //true if user has not yet rolled three times and has not decided to keep 5 dice values
             {
                 for(int dieNumber = 0; dieNumber < DICE_IN_PLAY; dieNumber++)
                 {
