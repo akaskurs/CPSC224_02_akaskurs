@@ -10,6 +10,15 @@ parsedString = Left(alert, 100) 'takes the first 500 characters and assigns to p
 If InStr(parsedString, "restarting") Then
 getObservation = "restarting"
 
+ElseIf InStr(parsedString, "restart resumed") Then
+getObservation = "restarting"
+
+ElseIf InStr(parsedString, "restart resumed") Then
+getObservation = "restarting"
+
+ElseIf InStr(parsedString, "being prepared for restart") Then
+getObservation = "restarting"
+
 ElseIf InStr(parsedString, "restarted") Then
 getObservation = "normal operations"
 
@@ -19,7 +28,40 @@ getObservation = "normal operations"
 ElseIf InStr(parsedString, "normal operations") Then
 getObservation = "normal operations"
 
+ElseIf InStr(parsedString, "returned to normal") Then
+getObservation = "normal operations"
+
+ElseIf InStr(parsedString, "resumes normal") Then
+getObservation = "normal operations"
+
+ElseIf InStr(parsedString, "resume normal") Then
+getObservation = "normal operations"
+
+ElseIf InStr(parsedString, "resuming normal") Then
+getObservation = "normal operations"
+
+ElseIf InStr(parsedString, "resumes normal activity") Then
+getObservation = "normal operations"
+
+ElseIf InStr(parsedString, "resumed normal activity") Then
+getObservation = "normal operations"
+
+ElseIf InStr(parsedString, "back online") Then
+getObservation = "normal operations"
+
+ElseIf InStr(parsedString, "online") Then
+getObservation = "normal operations"
+
 ElseIf InStr(parsedString, "shut down") Then
+getObservation = "shut down"
+
+ElseIf InStr(parsedString, "shutdown") Then
+getObservation = "shut down"
+
+ElseIf InStr(parsedString, "shut") Then
+getObservation = "shut down"
+
+ElseIf InStr(parsedString, "shutting") Then
 getObservation = "shut down"
 
 ElseIf InStr(parsedString, "offline") Then
@@ -31,14 +73,33 @@ getObservation = "increased activity"
 ElseIf InStr(parsedString, "decreased activity") Then
 getObservation = "decreased activity"
 
-ElseIf InStr(parsedString, "returned to normal") Then
-getObservation = "returned to normal"
 
 ElseIf InStr(parsedString, "excess emissions") Then
 getObservation = "operational issue"
 
+ElseIf InStr(parsedString, "intermittent excess CDU emissions") Then
+getObservation = "operational issue"
+
 ElseIf InStr(parsedString, "operational issue") Then
 getObservation = "operational issue"
+
+ElseIf InStr(parsedString, "restart resumes") Then
+getObservation = "restart resumed"
+
+ElseIf InStr(parsedString, "restart resumed") Then
+getObservation = "restart resumed"
+
+ElseIf InStr(parsedString, "restart continues") Then
+getObservation = "restart resumed"
+
+ElseIf InStr(parsedString, "restart halted") Then
+getObservation = "restart halted"
+
+ElseIf InStr(parsedString, "restart activity halted") Then
+getObservation = "restart halted"
+
+ElseIf InStr(parsedString, "restart activity stopped") Then
+getObservation = "restart halted"
 
 ElseIf InStr(parsedString, "flaring") Then
 getObservation = "flaring"
