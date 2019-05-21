@@ -1,0 +1,49 @@
+Option Compare Database
+Option Explicit
+
+Function getObservation(alert As String) As String
+
+Dim parsedString As String 'creates variable parsedString to use as String placeholder
+
+parsedString = Left(alert, 100) 'takes the first 500 characters and assigns to parsedString
+
+If InStr(parsedString, "restarting") Then
+getObservation = "restarting"
+
+ElseIf InStr(parsedString, "restarted") Then
+getObservation = "normal operations"
+
+ElseIf InStr(parsedString, "restart complete") Then
+getObservation = "normal operations"
+
+ElseIf InStr(parsedString, "normal operations") Then
+getObservation = "normal operations"
+
+ElseIf InStr(parsedString, "shut down") Then
+getObservation = "shut down"
+
+ElseIf InStr(parsedString, "offline") Then
+getObservation = "offline"
+
+ElseIf InStr(parsedString, "increased activity") Then
+getObservation = "increased activity"
+
+ElseIf InStr(parsedString, "decreased activity") Then
+getObservation = "decreased activity"
+
+ElseIf InStr(parsedString, "returned to normal") Then
+getObservation = "returned to normal"
+
+ElseIf InStr(parsedString, "excess emissions") Then
+getObservation = "operational issue"
+
+ElseIf InStr(parsedString, "operational issue") Then
+getObservation = "operational issue"
+
+ElseIf InStr(parsedString, "flaring") Then
+getObservation = "flaring"
+
+Else
+getObservation = "no category"
+End If
+End Function
